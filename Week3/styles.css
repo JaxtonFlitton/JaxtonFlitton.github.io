@@ -1,0 +1,77 @@
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Nunito+Sans:wght@400&display=swap');
+
+* {
+  --computer-orange: #E3170A;
+  --vanilla: #E4D6A7;
+  --honey: #E9B44C;
+  --not-ocean: #50A2A7;
+  --coffee-brown: #170F11;
+  color: white;
+}
+
+body {
+    font-family: "Josefin Sans";
+    background-image: url("./portfolioAssets/pattern2.png");
+    padding-left: 60px;
+    padding-right: 60px;
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+}
+
+header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+  font-size: 32px;
+  color: var(--vanilla);
+}
+
+.displays {
+    display: flex;
+    gap: 14px;
+}
+
+.intro {
+    font-size: 44px;
+    margin-bottom: 32px;
+    
+}
+
+h2 {
+  text-transform: uppercase;
+  text-shadow: 3px 1px 0px var(--not-ocean);
+}
+
+.displays div {
+    background-color: var(--computer-orange);
+    padding: 16px;
+    border: 4px var(--vanilla) solid;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+
+    transition: all 500ms;
+}
+
+.displays h3 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.displays p {
+    text-align: center;
+}
+
+.displays div:hover {
+    border-width: 10px;
+    background-color: var(--not-ocean);
+}
+
+.displays div > img {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+  border-radius: 8px;
+}
