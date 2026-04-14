@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>JJK MOVES!</title>
+
+    <style>
+
+        
+    .oswald-scratchy {
+         font-family: "Oswald", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-style: normal;
+        }
+
+        body {
+            background-color: white;
+            font-family: "oswald", sans-serif;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            padding: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0px;
+            text-align: center;
+            margin-bottom: auto;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .title {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            width: 100%;
+        }
+
+        .card1 {
+            background-color: #6699ff;
+            border: 8px solid black;
+            width: auto;
+            height: auto;
+            padding: 36px;
+            border-radius: 12px;
+            text-shadow: 10px 10px 10px blue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card1 > img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 12px;
+            
+        }
+
+        .card2 {
+            background-color: #6699ff;
+            border: 8px solid black;
+            width: auto;
+            height: auto;
+            padding: 36px;
+            border-radius: 12px;
+            text-shadow: 10px 10px 10px blue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card2 > img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 12px;
+            
+        }
+
+        .button {
+            background-color: black;
+            color: red;
+            width: auto;
+            height: auto;
+            font-size: large;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            * {
+                font-size: 1rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card1, .card2 {
+                padding: 20px;
+            }
+
+            .card1 > ul, .card2 > ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 6px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h2 class="title">JJK TECHNIQUES</h2>
+
+    <div class="grid">
+
+    <div class="card1">
+        <img src="./assets/blackFlash.jpg">
+
+        <h1>Black Flash!</h1>
+        <p>Deal double the damage of a normal hit, stun the opponent, and physically knock out their soul!</p>
+        <ul>
+            <li>Enter the zone!</li>
+            <li>Hurt your opponent!</li>
+            <li>And even heal yourself!</li>
+        </ul>
+
+            <h3><a href="https://www.viz.com/shonenjump/jujutsu-kaisen-chapter-1/chapter/6664?action=read"><button class="button">For only the strong and the fortunate...</button></a></h3>
+    </div>
+
+    <div class="card1">
+        <img src="./assets/DE.jpg">
+
+        <h2> Domain Expansion! </h2>
+        <p>Expand your power to enclose a physical space, and guarentee it works and effects your opponent!</p>
+        <ul>
+            <li>Create a border, limiting escape</li>
+            <li>Ensnare your opponent</li>
+            <li>Flex your strength</li>
+        </ul>
+
+        <h3><a href="https://www.viz.com/shonenjump/jujutsu-kaisen-chapter-1/chapter/6664?action=read"><button class="button">Ensure your victory!</button></a></h3>
+    </div>
+
+    <div class="card2">
+        <img src="./assets/yuta-rct.avif">
+
+        <h2> Reverse Cursed Technique! </h2>
+        <p>Multiply your energy onto yourself and give yourself and others a heal!</p>
+        <ul>
+            <li>Regenerate a limb</li>
+            <li>Repair and strengthen your brain!</li>
+            <li>Superpower your abilities!</li>
+        </ul>
+
+        <h3><a href="https://www.viz.com/shonenjump/jujutsu-kaisen-chapter-1/chapter/6664?action=read"><button class="button">Push your strength!</button></a></h3>
+    </div>
+
+    <div class="card2">
+        <img src="./assets/OIP (2).webp">
+
+        <h2> Maximum Technique! </h2>
+        <p>Use every last drop and go all out!</p>
+        <ul>
+            <li>Push yourself to your limits</li>
+            <li>Cause massive destruction!</li>
+            <li>Guarentee victory</li>
+        </ul>
+
+        <h3><a href="https://www.viz.com/shonenjump/jujutsu-kaisen-chapter-1/chapter/6664?action=read"><button class="button">For only those who try...</button></a></h3>
+    </div>
+
+    </div>
+
+</body>
+</html>
