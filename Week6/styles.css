@@ -1,0 +1,122 @@
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Nunito+Sans:wght@400&display=swap');
+
+* {
+  --computer-orange: #E3170A;
+  --vanilla: #E4D6A7;
+  --honey: #E9B44C;
+  --not-ocean: #50A2A7;
+  --coffee-brown: #170F11;
+  color: white;
+}
+
+body {
+    font-family: "Josefin Sans";
+    background-image: url("./assets/pattern2.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleCard {
+    background-color: var(--not-ocean);
+    width: 100%;
+    margin: auto;
+    border-color: var(--vanilla);
+    border-width: 4px;
+    border-style: solid;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.summary {
+    
+    background-color: var(--not-ocean);
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-color: var(--vanilla);
+    border-width: 3px;
+    border-style: solid;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.titleCard,
+.summary {
+    transition: background-color 0.25s ease;
+    transition: border-color 0.25s ease;
+}
+
+.titleCard:hover,
+.summary:hover {
+    background-color: var(--coffee-brown);
+    border-color: var(--computer-orange);
+    cursor: pointer;
+}
+
+.picture {
+    width: 75vw;
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.picture:hover,
+.picture:hover img{
+    transform: scale(1.02);
+    border-color: var(--computer-orange);
+}
+
+.picture img {
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+    border: 3px solid var(--vanilla);
+
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+button {
+    background-color: var(--honey);
+    width: 96px;
+    height: 32px;
+    color: black;
+}
+
+.backward-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.forward-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.Brief-Summary {
+    font-size: xx-large;
+    width: 70vw;
+    height: 35vw;
+    background-color: #170F11;
+    border: 3px solid var(--computer-orange);
+    text-align: center;
+
+    opacity: 0;
+    transition: opacity 0.25 ease;
+}
+
+.picture:hover ~ .Brief-Summary {
+    opacity: 1;
+}
